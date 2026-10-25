@@ -6,7 +6,7 @@
 <!-- ===================== TEXTE QUI S'ÉCRIT ===================== -->
 <p align="center">
   <a href="https://github.com/VOTRE_USERNAME">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=640&lines=D%C3%A9veloppeuse+Full-Stack+%F0%9F%92%BB;%C3%89tudiante+en+G%C3%A9nie+Logiciel+%26+Syst%C3%A8mes+d'Information+%F0%9F%8E%93;Passionn%C3%A9e+par+l'IA%2C+le+Cloud+%26+le+DevOps+%E2%98%81%EF%B8%8F;Je+cherche+un+stag+pfe+%E2%80%94+parlons-en+!+%F0%9F%A4%9D" alt="Texte animé"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=640&lines=D%C3%A9veloppeuse+Full-Stack+%F0%9F%92%BB;%C3%89tudiante+en+G%C3%A9nie+Logiciel+%26+Syst%C3%A8mes+d'Information+%F0%9F%8E%93;Passionn%C3%A9e+par+l'IA%2C+le+Cloud+%26+le+DevOps+%E2%98%81%EF%B8%8F;Je+cherche+un+stag+%E2%80%94+parlons-en+!+%F0%9F%A4%9D" alt="Texte animé"/>
   </a>
 </p>
 
