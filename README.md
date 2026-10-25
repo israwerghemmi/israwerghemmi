@@ -71,12 +71,24 @@ Plateforme développée de A à Z, avec **isolation physique des bases de donné
 </details>
 
 <details>
-<summary><b>Agent IA de diagnostic de visibilité locale</b> — <i>Projet de fin d'année · ISIMM · 2026</i></summary>
+<summary><b>Agent IA de diagnostic de visibilité locale</b> — <i>Projet de fin d'année · ISIMM · 2026 · Projet d'équipe</i></summary>
 <br/>
 
-Assistant web d'intelligence économique qui génère automatiquement des **rapports SWOT et des plans d'action** pour les PME, à partir de données publiques analysées par LLM.
+Outil d'analyse automatique d'entreprises qui transforme des données Google en un **rapport structuré** : diagnostic, plan d'action et indicateurs de suivi, destiné aux PME.
 
-`Python` `FastAPI` `Next.js` `TypeScript` `OpenAI GPT-4o` `SerpAPI` `ReportLab`
+**Pipeline** : `SerpAPI` → `Gemini` → `JSON structuré` → exports
+
+- **Collecte** : récupération des informations publiques d'une entreprise (nom, adresse, note, avis, horaires, photos) via SerpAPI
+- **Diagnostic IA** : Gemini génère l'analyse SWOT (points forts, points faibles, opportunités) et l'analyse des avis clients (thèmes et sentiment)
+- **Plan d'action** : feuille de route à court, moyen et long terme, avec priorités (P0 à P3), KPIs à suivre, risques et mesures d'atténuation
+- **Fiabilité des données** : classe `ResponseFormatter` qui transforme le texte de l'IA en JSON, puis le valide contre un schéma (champs obligatoires, types, énumérations)
+- **Traçabilité** : métadonnées pour chaque analyse (identifiant unique, version du prompt, modèle utilisé, temps de réponse)
+- **Exports** : rapport complet en JSON, avec PDF, Excel, HTML et API REST prévus à partir de ce même format
+- **Organisation** : équipe de 6 personnes, 4 sprints (collecte, analyse IA, PDF et interface, tests et documentation)
+
+`Python` `SerpAPI` `Google Gemini` `JSON Schema` `Requests` `python-dotenv` `ReportLab` `Pandas` `Jinja2` `FastAPI`
+
+[Voir le code](https://github.com/anisothman/projet-pfa)
 
 </details>
 
