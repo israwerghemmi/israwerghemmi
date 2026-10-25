@@ -71,24 +71,19 @@ Plateforme développée de A à Z, avec **isolation physique des bases de donné
 </details>
 
 <details>
-<summary><b>Agent IA de diagnostic de visibilité locale</b> — <i>Projet de fin d'année · ISIMM · 2026 · Projet d'équipe</i></summary>
+<summary><b>Localis AI — Agent IA de diagnostic de visibilité locale</b> — <i>Projet de fin d'année · ISIMM · 2026</i></summary>
 <br/>
 
-Outil d'analyse automatique d'entreprises qui transforme des données Google en un **rapport structuré** : diagnostic, plan d'action et indicateurs de suivi, destiné aux PME.
+Application web qui génère, à partir du nom d'une entreprise, un **diagnostic SWOT, un plan d'action avec KPIs et un rapport PDF**. Projet réalisé en équipe de 6 personnes, en 3 sprints.
 
-**Pipeline** : `SerpAPI` → `Gemini` → `JSON structuré` → exports
+- **Collecte** : récupération de la fiche Google, des avis et des pages web de l'entreprise via SerpAPI
+- **Analyse IA** : deux prompts enchaînés (SWOT puis plan d'action) avec parseur JSON strict, OpenAI en modèle principal et bascule automatique sur Gemini en cas de quota dépassé
+- **Rapport** : export PDF (ReportLab) et interface web avec suivi de l'analyse en direct
+- **Ma contribution** : conception et rédaction des prompts IA (diagnostic SWOT et plan d'action)
 
-- **Collecte** : récupération des informations publiques d'une entreprise (nom, adresse, note, avis, horaires, photos) via SerpAPI
-- **Diagnostic IA** : Gemini génère l'analyse SWOT (points forts, points faibles, opportunités) et l'analyse des avis clients (thèmes et sentiment)
-- **Plan d'action** : feuille de route à court, moyen et long terme, avec priorités (P0 à P3), KPIs à suivre, risques et mesures d'atténuation
-- **Fiabilité des données** : classe `ResponseFormatter` qui transforme le texte de l'IA en JSON, puis le valide contre un schéma (champs obligatoires, types, énumérations)
-- **Traçabilité** : métadonnées pour chaque analyse (identifiant unique, version du prompt, modèle utilisé, temps de réponse)
-- **Exports** : rapport complet en JSON, avec PDF, Excel, HTML et API REST prévus à partir de ce même format
-- **Organisation** : équipe de 6 personnes, 4 sprints (collecte, analyse IA, PDF et interface, tests et documentation)
+`Python` `FastAPI` `Next.js` `TypeScript` `OpenAI` `Google Gemini` `SerpAPI` `ReportLab` `Docker` `Pytest`
 
-`Python` `SerpAPI` `Google Gemini` `JSON Schema` `Requests` `python-dotenv` `ReportLab` `Pandas` `Jinja2` `FastAPI`
-
-[Voir le code](https://github.com/anisothman/projet-pfa)
+[Voir le code](https://github.com/HIBAMAHROUG/Localis-AI)
 
 </details>
 
